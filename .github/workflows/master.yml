@@ -13,7 +13,7 @@ jobs:
      
     #set up python
    - name: set up python
-     uses: action/setup-python@v5
+     uses: action/setup-python@v4
      with:
        python-version: '3.10'
 
