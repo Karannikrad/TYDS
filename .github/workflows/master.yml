@@ -1,0 +1,22 @@
+name : Run python programs
+on:
+ push:
+  branches:
+   - main
+jobs:
+ run-all:
+  runs-on: ubuntu-latest
+  steps:
+   #checkoput respository code
+   - name: checkout code
+     uses:action/checkout@v4
+     
+    #set up python
+    - name: set up python
+      uses: action/setup-python@v5
+      with:
+        python-version: '3.10'
+
+    #run first python script
+    - name: run script_hello.py
+      run: python script_hello.py
