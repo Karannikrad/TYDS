@@ -1,10 +1,11 @@
-name : Run python programs
+name : Run Java and python programs
 on:
  push:
   branches:
    - main
 jobs:
  run-all:
+ 
   runs-on: ubuntu-latest
   steps:
    #checkoput respository code
@@ -20,3 +21,4 @@ jobs:
     #run first python script
    - name: run script_hello.py
      run: python hello.py
+     
